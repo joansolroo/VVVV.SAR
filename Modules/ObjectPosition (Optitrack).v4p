@@ -1,0 +1,317 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
+   <PATCH nodename="C:\Inria\VVVV\vvvv.projects\SAR\modules\ObjectPosition (Optitrack).v4p" systemname="ObjectPosition (Optitrack)" filename="C:\Inria\VVVV\vvvv.contributions\ProjectorN (DX11)\ObjectPosition (Optitrack).v4p" scrollx="0" scrolly="3630">
+   <BOUNDS type="Window" left="3405" top="3405" width="15345" height="7050">
+   </BOUNDS>
+   <PACK Name="image" Version="0.2.0">
+   </PACK>
+   <PACK Name="addonpack" Version="33.7.0">
+   </PACK>
+   <NODE systemname="IP (Network)" nodename="IP (Network)" componentmode="Hidden" id="15">
+   <BOUNDS type="Node" left="9066" top="2967" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="IP" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="GetSpread (String)" nodename="GetSpread (String)" componentmode="Hidden" id="14">
+   <BOUNDS type="Node" left="9792" top="3603" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Offset" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="15" srcpinname="IP" dstnodeid="14" dstpinname="Input" linkstyle="PolyLine">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="13" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="12081" top="2685" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="12081" top="2685" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Enabled">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="12" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="12378" top="5736" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="12378" top="5736" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Connected">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="11" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="6786" top="7833" width="792" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="6786" top="7833" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Input String" visible="1" slicecount="1" values="|Rigid Body 1|">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Item Name|">
+   </PIN>
+   </NODE>
+   <NODE systemname="DropDown (String)" filename="%VVVV%\addonpack\lib\nodes\plugins\DropDown (String).dll" nodename="DropDown (String)" componentmode="InABox" id="10">
+   <BOUNDS type="Node" left="4440" top="5142" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4440" top="5142" width="2400" height="1200">
+   </BOUNDS>
+   <BOUNDS type="Window" left="-18648" top="6840" width="2616" height="1764">
+   </BOUNDS>
+   <PIN pinname="List Item" visible="1" slicecount="2" values="|Rigid Body 1|,|Rigid Body 1|">
+   </PIN>
+   <PIN pinname="Selected Item" visible="1">
+   </PIN>
+   <PIN pinname="Selected Index" visible="1">
+   </PIN>
+   <PIN pinname="Select Item" visible="1">
+   </PIN>
+   <PIN pinname="Do Select" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="10" srcpinname="Selected Item" dstnodeid="11" dstpinname="Input String" linkstyle="VHV">
+   <LINKPOINT x="6818" y="7057">
+   </LINKPOINT>
+   <LINKPOINT x="6784" y="7118">
+   </LINKPOINT>
+   </LINK>
+   <NODE systemname="GetSpread (Spreads)" nodename="GetSpread (Spreads)" componentmode="Hidden" id="9">
+   <BOUNDS type="Node" left="9984" top="7491" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Count" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Input" visible="1" slicecount="3" values="0,0,0">
+   </PIN>
+   <PIN pinname="Offset" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="GetSpread (Spreads)" nodename="GetSpread (Spreads)" componentmode="Hidden" id="8">
+   <BOUNDS type="Node" left="11052" top="7479" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Count" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Input" visible="1" slicecount="4" values="0,0,0,0">
+   </PIN>
+   <PIN pinname="Offset" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="7" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="6213" top="3150" width="792" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="6213" top="3150" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Item index|">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="7" srcpinname="Y Output Value" dstnodeid="10" dstpinname="Select Item" linkstyle="PolyLine">
+   </LINK>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="6" systemname="IOBox (Node)">
+   <BOUNDS type="Box" left="10017" top="9459" width="792" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="10017" top="9459" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Transform(vvvv)">
+   </PIN>
+   <PIN pinname="Output Node" visible="1">
+   </PIN>
+   <PIN pinname="Input Node" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="5" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="8469" top="5658" width="1032" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="8469" top="5658" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Items">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Multiply (Value)" nodename="Multiply (Value)" componentmode="Hidden" id="4">
+   <BOUNDS type="Node" left="10341" top="6921" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 2" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Multiply (Value)" nodename="Multiply (Value)" componentmode="Hidden" id="3">
+   <BOUNDS type="Node" left="11421" top="6876" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 2" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="4" srcpinname="Output" dstnodeid="9" dstpinname="Offset">
+   </LINK>
+   <LINK srcnodeid="3" srcpinname="Output" dstnodeid="8" dstpinname="Offset">
+   </LINK>
+   <LINK srcnodeid="10" srcpinname="Selected Index" dstnodeid="4" dstpinname="Input 1" linkstyle="VHV">
+   <LINKPOINT x="5281" y="6536">
+   </LINKPOINT>
+   <LINKPOINT x="9566" y="6691">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="10" srcpinname="Selected Index" dstnodeid="3" dstpinname="Input 1" linkstyle="VHV">
+   <LINKPOINT x="5281" y="6514">
+   </LINKPOINT>
+   <LINKPOINT x="10646" y="6669">
+   </LINKPOINT>
+   </LINK>
+   <NODE systemname="Tracker (OptiTrack) (Devices)" filename="..\..\..\vvvv.projects\RGervais\vvvv.nodes\plugins\DeviceOptiTrack\DeviceOptiTrack.csproj" nodename="Tracker (OptiTrack) (Devices)" componentmode="Hidden" id="2">
+   <BOUNDS type="Node" left="9570" top="4275" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Local" visible="1" slicecount="1" values="0.0.0.0">
+   </PIN>
+   <PIN pinname="Server" visible="1">
+   </PIN>
+   <PIN pinname="Enabled" visible="1">
+   </PIN>
+   <PIN pinname="Connected" visible="1">
+   </PIN>
+   <PIN pinname="Rigid body name" visible="1">
+   </PIN>
+   <PIN pinname="PositionXYZ" visible="1">
+   </PIN>
+   <PIN pinname="QuaternionXYZW" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="14" srcpinname="Output" dstnodeid="2" dstpinname="Local" linkstyle="PolyLine">
+   </LINK>
+   <LINK srcnodeid="14" srcpinname="Output" dstnodeid="2" dstpinname="Server" linkstyle="PolyLine">
+   </LINK>
+   <LINK srcnodeid="13" srcpinname="Y Output Value" dstnodeid="2" dstpinname="Enabled" linkstyle="PolyLine">
+   </LINK>
+   <LINK srcnodeid="2" srcpinname="Connected" dstnodeid="12" dstpinname="Y Input Value" linkstyle="PolyLine">
+   </LINK>
+   <LINK srcnodeid="2" srcpinname="Rigid body name" dstnodeid="5" dstpinname="Input String" linkstyle="VHV">
+   <LINKPOINT x="9599" y="4957">
+   </LINKPOINT>
+   <LINKPOINT x="8494" y="5217">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="2" srcpinname="Rigid body name" dstnodeid="10" dstpinname="List Item" linkstyle="PolyLine">
+   </LINK>
+   <NODE id="0" componentmode="Hidden" systemname="OptiTrack2vvvv (Transform)" filename="..\..\..\vvvv.projects\RGervais\vvvv.nodes\modules\OptiTrack2vvvv\OptiTrack2vvvv (Transform).v4p" nodename="OptiTrack2vvvv (Transform)">
+   <BOUNDS type="Window" left="12150" top="3885" width="5505" height="5895">
+   </BOUNDS>
+   <BOUNDS type="Node" left="10017" top="8259" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="PositionXYZ" visible="1" slicecount="3" values="0.139697954058647,0.0278003811836243,0.22939245402813">
+   </PIN>
+   <PIN pinname="QuaternionXYZW" visible="1" slicecount="4" values="-0.0120109291747212,0.422065883874893,-0.000829627155326307,0.906485319137573">
+   </PIN>
+   <PIN pinname="Transform(vvvv)" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="0" srcpinname="Transform(vvvv)" dstnodeid="6" dstpinname="Input Node">
+   <LINKPOINT x="10029" y="9423">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="9" srcpinname="Output" dstnodeid="0" dstpinname="PositionXYZ">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="16" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="9870" top="5025" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="9870" top="5025" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="3" visible="1" values="0,0,0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="PositionXYZ">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="2" srcpinname="PositionXYZ" dstnodeid="16" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="16" srcpinname="Y Output Value" dstnodeid="9" dstpinname="Input">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="17" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="11055" top="5595" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="11055" top="5595" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="4" visible="1" values="0,0,0,0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="17" srcpinname="Y Output Value" dstnodeid="8" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="2" srcpinname="QuaternionXYZW" dstnodeid="17" dstpinname="Y Input Value">
+   </LINK>
+   <NODE systemname="Change (Animation)" nodename="Change (Animation)" componentmode="Hidden" id="18">
+   <BOUNDS type="Node" left="6810" top="4110" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="OnChange" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="7" srcpinname="Y Output Value" dstnodeid="18" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="18" srcpinname="OnChange" dstnodeid="10" dstpinname="Do Select">
+   </LINK>
+   <LINK srcnodeid="8" srcpinname="Output" dstnodeid="0" dstpinname="QuaternionXYZW" linkstyle="VHV">
+   <LINKPOINT x="11091" y="8077">
+   </LINKPOINT>
+   <LINKPOINT x="11370" y="7937">
+   </LINKPOINT>
+   </LINK>
+   </PATCH>

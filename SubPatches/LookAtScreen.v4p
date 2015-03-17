@@ -1,0 +1,179 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
+   <PATCH nodename="C:\Inria\VVVV\vvvv.projects\SAR\SubPatches\LookAtScreen.v4p" systemname="LookAtScreen" filename="C:\Inria\VVVV\vvvv.projects\SAR\SubPatches\LookAtScreen.v4p" scrollx="108" scrolly="1776">
+   <NODE id="0" systemname="Decompose (Transform Quaternion)" filename="%VVVV%\addonpack\lib\nodes\plugins\TransformsAdvanced.dll" nodename="Decompose (Transform Quaternion)" componentmode="Hidden">
+   <BOUNDS type="Node" left="2700" top="2664" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Transform In" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="TranslateXYZ" visible="1">
+   </PIN>
+   <PIN pinname="ScaleXYZ" visible="1">
+   </PIN>
+   <PIN pinname="RotateXYZW" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="1" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="1500" top="1500" width="792" height="720">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1500" top="1500" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="3" visible="1" values="-0.17,0.34,-0.36">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Eye position|">
+   </PIN>
+   </NODE>
+   <NODE systemname="Vector (4d Split)" nodename="Vector (4d Split)" componentmode="Hidden" id="2">
+   <BOUNDS type="Node" left="3294" top="3510" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="XYZW" visible="1">
+   </PIN>
+   <PIN pinname="X" visible="1">
+   </PIN>
+   <PIN pinname="Y" visible="1">
+   </PIN>
+   <PIN pinname="Z" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Vector (3d Join)" nodename="Vector (3d Join)" componentmode="Hidden" id="3">
+   <BOUNDS type="Node" left="3246" top="4062" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="X" visible="1">
+   </PIN>
+   <PIN pinname="Y" visible="1">
+   </PIN>
+   <PIN pinname="Z" visible="1" slicecount="1" values="0.00473471358418465">
+   </PIN>
+   <PIN pinname="XYZ" visible="1">
+   </PIN>
+   </NODE>
+   <NODE id="4" componentmode="Hidden" systemname="PerspectiveLookAtRect (Transform)" filename="%VVVV%\lib\nodes\modules\Transform\PerspectiveLookAtRect (Transform).v4p" nodename="PerspectiveLookAtRect (Transform)">
+   <PIN pinname="Rotate Rect" slicecount="3" visible="1" values="0.979769170284271,1.03031861782074,0.989189505577087">
+   </PIN>
+   <BOUNDS type="Node" left="1659" top="4821" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Window" left="1932" top="2556" width="15996" height="9252">
+   </BOUNDS>
+   <PIN pinname="Tranform In" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Transparent Layer" visible="1">
+   </PIN>
+   <PIN pinname="Tranform Out" visible="1">
+   </PIN>
+   <PIN pinname="Translate Rect" visible="1" slicecount="3" values="-0.491098120808601,0.459739148616791,-0.418153762817383">
+   </PIN>
+   <PIN pinname="Scale Rect" visible="1" slicecount="3" values="1,1,1">
+   </PIN>
+   <PIN pinname="Translate Camera" visible="1" slicecount="3" values="-0.384397387504578,0.252933651208878,-0.969922602176666">
+   </PIN>
+   <PIN pinname="Near Plane" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Far Plane" slicecount="3" visible="1" values="100,100,100">
+   </PIN>
+   <PIN pinname="view" visible="1">
+   </PIN>
+   <PIN pinname="projection" visible="1">
+   </PIN>
+   <PIN pinname="View" visible="1">
+   </PIN>
+   <PIN pinname="Perspective" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="5" systemname="IOBox (Node)">
+   <BOUNDS type="Box" left="2748" top="5829" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2748" top="5829" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Tranform Out|">
+   </PIN>
+   <PIN pinname="Output Node" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="6" systemname="IOBox (Node)">
+   <BOUNDS type="Box" left="3888" top="5829" width="990" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3888" top="5829" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" values="View">
+   </PIN>
+   <PIN pinname="Output Node" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="7" systemname="IOBox (Node)">
+   <BOUNDS type="Box" left="1728" top="5829" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1728" top="5829" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Perspective">
+   </PIN>
+   <PIN pinname="Output Node" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="8" systemname="IOBox (Node)">
+   <BOUNDS type="Box" left="2688" top="1524" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2688" top="1524" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Screen transform|">
+   </PIN>
+   <PIN pinname="Output Node" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="1" srcpinname="Y Output Value" dstnodeid="4" dstpinname="Translate Camera">
+   </LINK>
+   <LINK srcnodeid="0" srcpinname="TranslateXYZ" dstnodeid="4" dstpinname="Translate Rect">
+   </LINK>
+   <LINK srcnodeid="0" srcpinname="ScaleXYZ" dstnodeid="4" dstpinname="Scale Rect">
+   </LINK>
+   <LINK srcnodeid="3" srcpinname="XYZ" dstnodeid="4" dstpinname="Rotate Rect">
+   </LINK>
+   <NODE id="9" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Transparent Layer|">
+   </PIN>
+   <BOUNDS type="Box" left="1659" top="6329" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1659" top="6329" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="4" srcpinname="Transparent Layer" dstnodeid="9" dstpinname="Input Node">
+   </LINK>
+   <LINK srcnodeid="4" srcpinname="Perspective" dstnodeid="7" dstpinname="Input Node">
+   </LINK>
+   <LINK srcnodeid="8" srcpinname="Output Node" dstnodeid="0" dstpinname="Transform In">
+   </LINK>
+   <LINK srcnodeid="4" srcpinname="Tranform Out" dstnodeid="5" dstpinname="Input Node">
+   </LINK>
+   <LINK srcnodeid="2" srcpinname="X" dstnodeid="3" dstpinname="X" linkstyle="Bezier">
+   <LINKPOINT x="3306" y="3924">
+   </LINKPOINT>
+   <LINKPOINT x="3270" y="3924">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="2" srcpinname="Y" dstnodeid="3" dstpinname="Y" linkstyle="Bezier">
+   <LINKPOINT x="3510" y="3924">
+   </LINKPOINT>
+   <LINKPOINT x="3534" y="3924">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="2" srcpinname="Z" dstnodeid="3" dstpinname="Z">
+   </LINK>
+   <LINK srcnodeid="0" srcpinname="RotateXYZW" dstnodeid="2" dstpinname="XYZW">
+   </LINK>
+   <LINK srcnodeid="4" srcpinname="View" dstnodeid="6" dstpinname="Input Node">
+   </LINK>
+   <BOUNDS type="Window" left="6495" top="5160" width="5385" height="7320">
+   </BOUNDS>
+   <PACK Name="image" Version="0.2.0">
+   </PACK>
+   <PACK Name="addonpack" Version="33.7.0">
+   </PACK>
+   </PATCH>

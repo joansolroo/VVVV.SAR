@@ -1,0 +1,301 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
+   <PATCH nodename="C:\Inria\VVVV\vvvv.projects\SAR\SubPatches\OptitrackCubes.v4p" scrollx="15" scrolly="2160" systemname="OptitrackCubes" filename="C:\Inria\VVVV\vvvv.projects\SAR\SubPatches\OptitrackCubes.v4p">
+   <BOUNDS type="Window" left="7500" top="3750" width="9000" height="6000">
+   </BOUNDS>
+   <NODE systemname="OptiTrack2vvvv (Transform)" filename="..\..\RGervais\vvvv.nodes\modules\OptiTrack2vvvv\OptiTrack2vvvv (Transform).v4p" nodename="OptiTrack2vvvv (Transform)" componentmode="Hidden" id="14">
+   <BOUNDS type="Node" left="7203" top="5757" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="PositionXYZ" visible="1" slicecount="3" values="-0.00840372405946255,0.0299313981086016,0.276007056236267">
+   </PIN>
+   <PIN pinname="QuaternionXYZW" visible="1" slicecount="4" values="-0.885974526405334,-0.2593934237957,0.352522015571594,0.153272852301598">
+   </PIN>
+   <PIN pinname="Transform(vvvv)" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Tracker (OptiTrack) (Devices)" filename="..\..\RGervais\vvvv.nodes\plugins\DeviceOptiTrack\DeviceOptiTrack.csproj" nodename="Tracker (OptiTrack) (Devices)" componentmode="Hidden" id="13">
+   <BOUNDS type="Node" left="6771" top="2253" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Local" visible="1" slicecount="1" values="0.0.0.0">
+   </PIN>
+   <PIN pinname="Server" visible="1">
+   </PIN>
+   <PIN pinname="Enabled" visible="1">
+   </PIN>
+   <PIN pinname="Connected" visible="1">
+   </PIN>
+   <PIN pinname="Rigid body name" visible="1">
+   </PIN>
+   <PIN pinname="PositionXYZ" visible="1">
+   </PIN>
+   <PIN pinname="QuaternionXYZW" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="IP (Network)" nodename="IP (Network)" componentmode="Hidden" id="12">
+   <BOUNDS type="Node" left="6267" top="945" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="IP" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="GetSpread (String)" nodename="GetSpread (String)" componentmode="Hidden" id="11">
+   <BOUNDS type="Node" left="7683" top="1461" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Offset" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="12" srcpinname="IP" dstnodeid="11" dstpinname="Input" linkstyle="VHV">
+   <LINKPOINT x="7047" y="1341">
+   </LINKPOINT>
+   <LINKPOINT x="7683" y="1341">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="11" srcpinname="Output" dstnodeid="13" dstpinname="Local" linkstyle="VHV">
+   <LINKPOINT x="7627" y="1967">
+   </LINKPOINT>
+   <LINKPOINT x="6887" y="2011">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="11" srcpinname="Output" dstnodeid="13" dstpinname="Server" linkstyle="VHV">
+   <LINKPOINT x="7627" y="1973">
+   </LINKPOINT>
+   <LINKPOINT x="7415" y="2017">
+   </LINKPOINT>
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="10" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="9327" top="1233" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="9327" top="1233" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Enabled">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="10" srcpinname="Y Output Value" dstnodeid="13" dstpinname="Enabled" linkstyle="VHV">
+   <LINKPOINT x="9327" y="1977">
+   </LINKPOINT>
+   <LINKPOINT x="8487" y="1977">
+   </LINKPOINT>
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="9" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="9219" top="3009" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="9219" top="3009" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Connected">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="13" srcpinname="Connected" dstnodeid="9" dstpinname="Y Input Value" linkstyle="VHV">
+   <LINKPOINT x="8487" y="2769">
+   </LINKPOINT>
+   <LINKPOINT x="9219" y="2769">
+   </LINKPOINT>
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="8" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="5127" top="5121" width="792" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5127" top="5121" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Input String" visible="1" slicecount="1" values="|Rigid Body 1|">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Selected Item|">
+   </PIN>
+   </NODE>
+   <NODE systemname="DropDown (String)" filename="%VVVV%\addonpack\lib\nodes\plugins\DropDown (String).dll" nodename="DropDown (String)" componentmode="InABox" id="7">
+   <BOUNDS type="Node" left="3951" top="3105" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3951" top="3105" width="2400" height="1200">
+   </BOUNDS>
+   <BOUNDS type="Window" left="-18648" top="6840" width="2616" height="1764">
+   </BOUNDS>
+   <PIN pinname="List Item" visible="1" slicecount="2" values="|Rigid Body 1|,|Rigid Body 1|">
+   </PIN>
+   <PIN pinname="Selected Item" visible="1">
+   </PIN>
+   <PIN pinname="Selected Index" visible="1">
+   </PIN>
+   <PIN pinname="Select Item" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="7" srcpinname="Selected Item" dstnodeid="8" dstpinname="Input String" linkstyle="VHV">
+   <LINKPOINT x="5939" y="4795">
+   </LINKPOINT>
+   <LINKPOINT x="5515" y="4631">
+   </LINKPOINT>
+   </LINK>
+   <NODE systemname="GetSpread (Spreads)" nodename="GetSpread (Spreads)" componentmode="Hidden" id="6">
+   <BOUNDS type="Node" left="7215" top="4569" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Count" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Input" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Offset" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="13" srcpinname="PositionXYZ" dstnodeid="6" dstpinname="Input" linkstyle="VHV">
+   <LINKPOINT x="7215" y="2613">
+   </LINKPOINT>
+   <LINKPOINT x="7239" y="2613">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="7" srcpinname="Selected Index" dstnodeid="6" dstpinname="Offset" linkstyle="Bezier">
+   <LINKPOINT x="4011" y="4447">
+   </LINKPOINT>
+   <LINKPOINT x="7635" y="4415">
+   </LINKPOINT>
+   </LINK>
+   <NODE systemname="GetSpread (Spreads)" nodename="GetSpread (Spreads)" componentmode="Hidden" id="5">
+   <BOUNDS type="Node" left="8283" top="4557" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Count" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Input" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Offset" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="13" srcpinname="QuaternionXYZW" dstnodeid="5" dstpinname="Input" linkstyle="VHV">
+   <LINKPOINT x="7623" y="3543">
+   </LINKPOINT>
+   <LINKPOINT x="8295" y="3543">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="7" srcpinname="Selected Index" dstnodeid="5" dstpinname="Offset" linkstyle="Bezier">
+   <LINKPOINT x="4011" y="4441">
+   </LINKPOINT>
+   <LINKPOINT x="8703" y="4409">
+   </LINKPOINT>
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="4" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="5679" top="2073" width="792" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5679" top="2073" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Select Item|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="4" srcpinname="Y Output Value" dstnodeid="7" dstpinname="Select Item">
+   </LINK>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="3" systemname="IOBox (Node)">
+   <BOUNDS type="Box" left="7203" top="6957" width="792" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="7203" top="6957" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Transform(vvvv)">
+   </PIN>
+   <PIN pinname="Output Node" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="14" srcpinname="Transform(vvvv)" dstnodeid="3" dstpinname="Input Node">
+   <LINKPOINT x="7215" y="6921">
+   </LINKPOINT>
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="2" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="2595" top="2841" width="1032" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2595" top="2841" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Items">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="13" srcpinname="Rigid body name" dstnodeid="2" dstpinname="Input String" linkstyle="VHV">
+   <LINKPOINT x="6295" y="2529">
+   </LINKPOINT>
+   <LINKPOINT x="3131" y="2829">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="13" srcpinname="Rigid body name" dstnodeid="7" dstpinname="List Item" linkstyle="VHV">
+   <LINKPOINT x="6771" y="2795">
+   </LINKPOINT>
+   <LINKPOINT x="4011" y="2827">
+   </LINKPOINT>
+   </LINK>
+   <NODE systemname="Box (DX11.Geometry)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Box (DX11.Geometry)" componentmode="Hidden" id="15">
+   <BOUNDS type="Node" left="4830" top="8415" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Geometry Out" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="GouraudDirectional (DX11.Effect)" filename="%VVVV%\packs\dx11\nodes\dx11\GouraudDirectional.fx" nodename="GouraudDirectional (DX11.Effect)" componentmode="Hidden" id="16">
+   <BOUNDS type="Node" left="5715" top="9660" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Geometry" visible="1">
+   </PIN>
+   <PIN pinname="Transform In" visible="1">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="15" srcpinname="Geometry Out" dstnodeid="16" dstpinname="Geometry">
+   </LINK>
+   <LINK srcnodeid="3" srcpinname="Output Node" dstnodeid="16" dstpinname="Transform In">
+   </LINK>
+   <NODE systemname="Renderer (DX11)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11)" componentmode="InABox" id="17">
+   <BOUNDS type="Node" left="5175" top="10710" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="5175" top="10710" width="6000" height="4500">
+   </BOUNDS>
+   <BOUNDS type="Window" left="10935" top="7815" width="6240" height="5085">
+   </BOUNDS>
+   <PIN pinname="Layers" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="16" srcpinname="Layer" dstnodeid="17" dstpinname="Layers">
+   </LINK>
+   <LINK srcnodeid="13" srcpinname="PositionXYZ" dstnodeid="14" dstpinname="PositionXYZ">
+   </LINK>
+   <LINK srcnodeid="13" srcpinname="QuaternionXYZW" dstnodeid="14" dstpinname="QuaternionXYZW">
+   </LINK>
+   <PACK Name="image" Version="0.2.0">
+   </PACK>
+   <PACK Name="addonpack" Version="33.7.0">
+   </PACK>
+   </PATCH>

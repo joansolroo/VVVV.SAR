@@ -1,0 +1,259 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
+   <PATCH nodename="C:\Inria\VVVV\vvvv.projects\SAR\SubPatches\MouseCross.v4p" systemname="MouseCross" filename="C:\Inria\VVVV\vvvv.projects\SAR\SubPatches\MouseCross.v4p" scrollx="0" scrolly="-120">
+   <NODE systemname="Line (DX11)" filename="%VVVV%\packs\dx11\nodes\modules\Line (DX11).v4p" nodename="Line (DX11)" componentmode="Hidden" id="0">
+   <BOUNDS type="Node" left="1704" top="4320" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="From" visible="1" slicecount="12" values="-0.166070088744164,0.110705152153969,0.540786027908325,-0.168211504817009,0.342264622449875,0.536058127880096,0.0926296338438988,0.113145470619202,0.543132662773132,0.0904882177710533,0.344704955816269,0.538404822349548">
+   </PIN>
+   <PIN pinname="To" visible="1" slicecount="15" values="-0.0315722748637199,0.144693985581398,0.302959501743317,-0.365769267082214,0.0142650296911597,0.543479144573212,-0.368950188159943,0.364119976758957,0.53391969203949,0.184190526604652,0.0193813424557447,0.547726392745972,0.181009605526924,0.369236290454865,0.53816694021225">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Color" visible="1" slicecount="1" values="|1.00000,1.00000,1.00000,1.00000|">
+   </PIN>
+   <PIN pinname="VerticesXYZ" slicecount="6" values="0,0,0,0,0,0">
+   </PIN>
+   <PIN pinname="Width" slicecount="1" values="1" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Vector (2d Split)" nodename="Vector (2d Split)" componentmode="Hidden" id="1">
+   <BOUNDS type="Node" left="5268" top="2412" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="X" visible="1">
+   </PIN>
+   <PIN pinname="Y" visible="1">
+   </PIN>
+   <PIN pinname="XY" visible="1" slicecount="2" values="0.949948116950497,0.355551486296771">
+   </PIN>
+   </NODE>
+   <NODE systemname="ApplyTransform (Transform Vector)" nodename="ApplyTransform (Transform Vector)" componentmode="Hidden" id="2">
+   <BOUNDS type="Node" left="1500" top="3696" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="XYZ UnTransformed" visible="1" slicecount="3" values="0.998228176904243,0.998228176904243,0">
+   </PIN>
+   <PIN pinname="Transform" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="XYZ Transformed" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Vector (3d Join)" nodename="Vector (3d Join)" componentmode="Hidden" id="3">
+   <BOUNDS type="Node" left="5256" top="3144" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="X" visible="1">
+   </PIN>
+   <PIN pinname="Y" visible="1" slicecount="1" values="-0.5">
+   </PIN>
+   <PIN pinname="XY" visible="1">
+   </PIN>
+   <PIN pinname="XYZ" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="ApplyTransform (Transform Vector)" nodename="ApplyTransform (Transform Vector)" componentmode="Hidden" id="4">
+   <BOUNDS type="Node" left="2964" top="3708" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="XYZ UnTransformed" visible="1" slicecount="3" values="-0.5,0.5,0">
+   </PIN>
+   <PIN pinname="Transform" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="XYZ Transformed" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Vector (3d Join)" nodename="Vector (3d Join)" componentmode="Hidden" id="5">
+   <BOUNDS type="Node" left="4380" top="3144" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="XYZ" visible="1">
+   </PIN>
+   <PIN pinname="Y" visible="1" slicecount="1" values="0.5">
+   </PIN>
+   <PIN pinname="X" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Vector (3d Join)" nodename="Vector (3d Join)" componentmode="Hidden" id="6">
+   <BOUNDS type="Node" left="5280" top="4524" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="X" visible="1" slicecount="1" values="0.5">
+   </PIN>
+   <PIN pinname="Y" visible="1" slicecount="1" values="0.958267540927539">
+   </PIN>
+   <PIN pinname="XY" visible="1">
+   </PIN>
+   <PIN pinname="XYZ" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Vector (3d Join)" nodename="Vector (3d Join)" componentmode="Hidden" id="7">
+   <BOUNDS type="Node" left="4404" top="4524" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="XYZ" visible="1">
+   </PIN>
+   <PIN pinname="Y" visible="1" slicecount="1" values="0.958267540927539">
+   </PIN>
+   <PIN pinname="X" visible="1" slicecount="1" values="-0.5">
+   </PIN>
+   </NODE>
+   <NODE systemname="Line (DX11)" filename="%VVVV%\packs\dx11\nodes\modules\Line (DX11).v4p" nodename="Line (DX11)" componentmode="Hidden" id="8">
+   <BOUNDS type="Node" left="1764" top="5580" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="From" visible="1" slicecount="12" values="-0.166070088744164,0.110705152153969,0.540786027908325,-0.168211504817009,0.342264622449875,0.536058127880096,0.0926296338438988,0.113145470619202,0.543132662773132,0.0904882177710533,0.344704955816269,0.538404822349548">
+   </PIN>
+   <PIN pinname="To" visible="1" slicecount="15" values="-0.0315722748637199,0.144693985581398,0.302959501743317,-0.365769267082214,0.0142650296911597,0.543479144573212,-0.368950188159943,0.364119976758957,0.53391969203949,0.184190526604652,0.0193813424557447,0.547726392745972,0.181009605526924,0.369236290454865,0.53816694021225">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Color" visible="1" slicecount="1" values="|1.00000,1.00000,1.00000,1.00000|">
+   </PIN>
+   <PIN pinname="VerticesXYZ" slicecount="6" values="0,0,0,0,0,0">
+   </PIN>
+   <PIN pinname="Width" slicecount="1" values="1" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="ApplyTransform (Transform Vector)" nodename="ApplyTransform (Transform Vector)" componentmode="Hidden" id="9">
+   <BOUNDS type="Node" left="1560" top="4956" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="XYZ UnTransformed" visible="1" slicecount="3" values="0.998228176904243,0.998228176904243,0">
+   </PIN>
+   <PIN pinname="Transform" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="XYZ Transformed" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="ApplyTransform (Transform Vector)" nodename="ApplyTransform (Transform Vector)" componentmode="Hidden" id="10">
+   <BOUNDS type="Node" left="3024" top="4968" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="XYZ UnTransformed" visible="1" slicecount="3" values="-0.5,0.5,0">
+   </PIN>
+   <PIN pinname="Transform" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="XYZ Transformed" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Group (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Group (DX11.Layer)" componentmode="Hidden" id="11">
+   <BOUNDS type="Node" left="4296" top="6456" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Layer 1" visible="1">
+   </PIN>
+   <PIN pinname="Layer 2" visible="1">
+   </PIN>
+   <PIN pinname="Layer Out" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Divide (Value)" nodename="Divide (Value)" componentmode="Hidden" id="12">
+   <BOUNDS type="Node" left="5280" top="1500" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 2" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="13" systemname="IOBox (Node)">
+   <BOUNDS type="Box" left="2700" top="1512" width="792" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2700" top="1512" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input Node" slicecount="1" visible="1" values="||">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Output Node" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="13" srcpinname="Output Node" dstnodeid="2" dstpinname="Transform">
+   </LINK>
+   <LINK srcnodeid="5" srcpinname="XYZ" dstnodeid="2" dstpinname="XYZ UnTransformed">
+   </LINK>
+   <LINK srcnodeid="13" srcpinname="Output Node" dstnodeid="9" dstpinname="Transform">
+   </LINK>
+   <LINK srcnodeid="7" srcpinname="XYZ" dstnodeid="9" dstpinname="XYZ UnTransformed">
+   </LINK>
+   <LINK srcnodeid="2" srcpinname="XYZ Transformed" dstnodeid="0" dstpinname="From">
+   </LINK>
+   <LINK srcnodeid="4" srcpinname="XYZ Transformed" dstnodeid="0" dstpinname="To">
+   </LINK>
+   <LINK srcnodeid="9" srcpinname="XYZ Transformed" dstnodeid="8" dstpinname="From">
+   </LINK>
+   <LINK srcnodeid="10" srcpinname="XYZ Transformed" dstnodeid="8" dstpinname="To">
+   </LINK>
+   <NODE id="14" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="Transform">
+   </PIN>
+   <BOUNDS type="Box" left="2700" top="500" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2700" top="500" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="14" srcpinname="Output Node" dstnodeid="13" dstpinname="Input Node">
+   </LINK>
+   <LINK srcnodeid="13" srcpinname="Output Node" dstnodeid="4" dstpinname="Transform">
+   </LINK>
+   <LINK srcnodeid="3" srcpinname="XYZ" dstnodeid="4" dstpinname="XYZ UnTransformed" linkstyle="PolyLine">
+   </LINK>
+   <LINK srcnodeid="13" srcpinname="Output Node" dstnodeid="10" dstpinname="Transform">
+   </LINK>
+   <LINK srcnodeid="6" srcpinname="XYZ" dstnodeid="10" dstpinname="XYZ UnTransformed">
+   </LINK>
+   <LINK srcnodeid="0" srcpinname="Layer" dstnodeid="11" dstpinname="Layer 1">
+   </LINK>
+   <LINK srcnodeid="8" srcpinname="Layer" dstnodeid="11" dstpinname="Layer 2">
+   </LINK>
+   <NODE id="15" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Layer Out|">
+   </PIN>
+   <BOUNDS type="Box" left="4296" top="7056" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4296" top="7056" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="11" srcpinname="Layer Out" dstnodeid="15" dstpinname="Input Node">
+   </LINK>
+   <LINK srcnodeid="1" srcpinname="X" dstnodeid="5" dstpinname="X">
+   </LINK>
+   <LINK srcnodeid="1" srcpinname="Y" dstnodeid="7" dstpinname="Y">
+   </LINK>
+   <LINK srcnodeid="1" srcpinname="X" dstnodeid="3" dstpinname="X">
+   </LINK>
+   <LINK srcnodeid="12" srcpinname="Output" dstnodeid="1" dstpinname="XY">
+   </LINK>
+   <LINK srcnodeid="1" srcpinname="Y" dstnodeid="6" dstpinname="Y">
+   </LINK>
+   <NODE id="16" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Mouse Position|">
+   </PIN>
+   <BOUNDS type="Box" left="5280" top="500" width="768" height="624">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5280" top="500" width="750" height="240">
+   </BOUNDS>
+   <PIN pinname="Vector Size" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="2">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="16" srcpinname="Y Output Value" dstnodeid="12" dstpinname="Input">
+   </LINK>
+   <BOUNDS type="Window" left="6000" top="5616" width="6876" height="8052">
+   </BOUNDS>
+   <PACK Name="image" Version="0.2.0">
+   </PACK>
+   <PACK Name="addonpack" Version="33.7.0">
+   </PACK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="17" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="1200" top="1275" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1200" top="1275" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.15">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Width - Width|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="17" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Width">
+   </LINK>
+   <LINK srcnodeid="17" srcpinname="Y Output Value" dstnodeid="8" dstpinname="Width">
+   </LINK>
+   </PATCH>
