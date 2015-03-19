@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Inria\VVVV\vvvv.projects\SAR\SubPatches\TwoWatchesSoftShadowHead.v4p" systemname="TwoWatchesSoftShadowHead" filename="C:\Inria\VVVV\vvvv.projects\SAR\SubPatches\TwoWatchesSoftShadowHead.v4p" scrollx="26148" scrolly="38496">
+   <PATCH nodename="C:\Inria\VVVV\vvvv.projects\SAR\SubPatches\TwoWatchesSoftShadowHead.v4p" systemname="TwoWatchesSoftShadowHead" filename="C:\Inria\VVVV\vvvv.projects\SAR\SubPatches\TwoWatchesSoftShadowHead.v4p" scrollx="24276" scrolly="34968">
    <BOUNDS type="Window" left="0" top="0" width="26640" height="12384">
    </BOUNDS>
    <PACK Name="image" Version="0.2.0">
@@ -2980,12 +2980,12 @@
    <LINKPOINT x="38872" y="43250">
    </LINKPOINT>
    </LINK>
-   <NODE systemname="AnnotationHandler" filename="AnnotationHandler.v4p" nodename="AnnotationHandler.v4p" componentmode="InAWindow" id="1026">
+   <NODE systemname="AnnotationHandler" filename="AnnotationHandler.v4p" nodename="AnnotationHandler.v4p" componentmode="Hidden" id="1026">
    <BOUNDS type="Node" left="38638" top="42482" width="0" height="0">
    </BOUNDS>
    <BOUNDS type="Box" left="35208" top="37676" width="8292" height="9612">
    </BOUNDS>
-   <BOUNDS type="Window" left="3564" top="1812" width="16548" height="9612">
+   <BOUNDS type="Window" left="2388" top="336" width="13296" height="11088">
    </BOUNDS>
    <PIN pinname="Size" visible="1">
    </PIN>

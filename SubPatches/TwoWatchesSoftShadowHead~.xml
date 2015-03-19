@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Inria\VVVV\vvvv.projects\SAR\SubPatches\TwoWatchesSoftShadowHead.v4p" systemname="TwoWatchesSoftShadowHead" filename="C:\Inria\VVVV\vvvv.projects\SAR\SubPatches\TwoWatchesSoftShadowHead.v4p" scrollx="24120" scrolly="35112">
+   <PATCH nodename="C:\Inria\VVVV\vvvv.projects\SAR\SubPatches\TwoWatchesSoftShadowHead.v4p" systemname="TwoWatchesSoftShadowHead" filename="C:\Inria\VVVV\vvvv.projects\SAR\SubPatches\TwoWatchesSoftShadowHead.v4p" scrollx="24276" scrolly="34968">
    <BOUNDS type="Window" left="0" top="0" width="26640" height="12384">
    </BOUNDS>
    <PACK Name="image" Version="0.2.0">
@@ -2857,7 +2857,7 @@
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
-   <PIN pinname="Select" visible="1" slicecount="1" values="0">
+   <PIN pinname="Select" visible="1" slicecount="1" values="3">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -2927,9 +2927,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="1019" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="39624" top="44604" width="792" height="240">
+   <BOUNDS type="Box" left="39576" top="44520" width="792" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="39624" top="44604" width="0" height="0">
+   <BOUNDS type="Node" left="39576" top="44520" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.01">
    </PIN>
@@ -2943,21 +2943,21 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="1019" srcpinname="Y Output Value" dstnodeid="1020" dstpinname="X" linkstyle="VHV">
-   <LINKPOINT x="39816" y="45024">
+   <LINKPOINT x="39784" y="44968">
    </LINKPOINT>
-   <LINKPOINT x="39300" y="44964">
+   <LINKPOINT x="39284" y="44936">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="1019" srcpinname="Y Output Value" dstnodeid="1020" dstpinname="Y" linkstyle="VHV">
-   <LINKPOINT x="39816" y="45024">
+   <LINKPOINT x="39784" y="44968">
    </LINKPOINT>
-   <LINKPOINT x="39480" y="44964">
+   <LINKPOINT x="39464" y="44936">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="1019" srcpinname="Y Output Value" dstnodeid="1020" dstpinname="Z" linkstyle="VHV">
-   <LINKPOINT x="39804" y="45036">
+   <LINKPOINT x="39772" y="44980">
    </LINKPOINT>
-   <LINKPOINT x="39660" y="44976">
+   <LINKPOINT x="39644" y="44948">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="1017" srcpinname="Transform Out" dstnodeid="1020" dstpinname="Transform In">
@@ -2985,7 +2985,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="35208" top="37676" width="8292" height="9612">
    </BOUNDS>
-   <BOUNDS type="Window" left="3564" top="1812" width="16548" height="9612">
+   <BOUNDS type="Window" left="2388" top="336" width="13296" height="11088">
    </BOUNDS>
    <PIN pinname="Size" visible="1">
    </PIN>
@@ -2993,7 +2993,7 @@
    </PIN>
    <PIN pinname="Insert" visible="1" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Index" visible="1" slicecount="1" values="-5">
+   <PIN pinname="Index" visible="1" slicecount="1" values="4">
    </PIN>
    <PIN pinname="Current Parent Index" visible="1">
    </PIN>
@@ -3006,12 +3006,6 @@
    <PIN pinname="Text in" visible="1" slicecount="1" values="|Annotation index&cr;&lf;|">
    </PIN>
    </NODE>
-   <LINK srcnodeid="1026" srcpinname="Size" dstnodeid="1012" dstpinname="Select" linkstyle="Bezier" hiddenwhenlocked="1">
-   <LINKPOINT x="38956" y="43710">
-   </LINKPOINT>
-   <LINKPOINT x="37904" y="43722">
-   </LINKPOINT>
-   </LINK>
    <LINK srcnodeid="1026" srcpinname="Parent index out" dstnodeid="1015" dstpinname="Index">
    </LINK>
    <LINK srcnodeid="1026" srcpinname="Parent index out" dstnodeid="1021" dstpinname="Index" linkstyle="Bezier">
@@ -3083,19 +3077,21 @@
    <LINK srcnodeid="1030" srcpinname="Output Node" dstnodeid="1017" dstpinname="Transform In 2">
    </LINK>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="1031" systemname="IOBox (Node)">
-   <BOUNDS type="Box" left="37512" top="45984" width="792" height="240">
+   <BOUNDS type="Box" left="37536" top="46728" width="792" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="37512" top="45984" width="0" height="0">
+   <BOUNDS type="Node" left="37536" top="46728" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Output Node" visible="1">
+   </PIN>
+   <PIN pinname="Bin Size" visible="1" slicecount="1" values="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="1012" srcpinname="Output" dstnodeid="1031" dstpinname="Input Node">
    </LINK>
    <LINK srcnodeid="1031" srcpinname="Output Node" dstnodeid="1018" dstpinname="Geometry" linkstyle="Bezier">
-   <LINKPOINT x="37244" y="47250">
+   <LINKPOINT x="37596" y="47616">
    </LINKPOINT>
-   <LINKPOINT x="39448" y="47238">
+   <LINKPOINT x="39120" y="47616">
    </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="1032" systemname="IOBox (Node)">
@@ -3176,25 +3172,37 @@
    </LINK>
    <LINK srcnodeid="1039" srcpinname="Output" dstnodeid="1037" dstpinname="Input Node">
    </LINK>
-   <LINK srcnodeid="1012" srcpinname="Output" dstnodeid="1039" dstpinname="Input 2">
+   <LINK srcnodeid="1012" srcpinname="Output" dstnodeid="1039" dstpinname="Input 2" linkstyle="Bezier">
+   <LINKPOINT x="37500" y="45558">
+   </LINKPOINT>
+   <LINKPOINT x="34968" y="45558">
+   </LINKPOINT>
    </LINK>
    <LINK srcnodeid="1034" srcpinname="Output Node" dstnodeid="1032" dstpinname="Input Node">
    </LINK>
    <LINK srcnodeid="1037" srcpinname="Output Node" dstnodeid="1033" dstpinname="Input Node">
    </LINK>
-   <LINK srcnodeid="1020" srcpinname="Transform Out" dstnodeid="1036" dstpinname="Input 2">
+   <LINK srcnodeid="1020" srcpinname="Transform Out" dstnodeid="1036" dstpinname="Input 2" linkstyle="Bezier">
+   <LINKPOINT x="39240" y="45810">
+   </LINKPOINT>
+   <LINKPOINT x="33732" y="45810">
+   </LINKPOINT>
    </LINK>
    <LINK srcnodeid="906" srcpinname="Input Value" dstnodeid="971" dstpinname="Input">
    </LINK>
    <NODE systemname="Rasterizer (DX11.RenderState)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Rasterizer (DX11.RenderState)" componentmode="Hidden" id="1041">
-   <BOUNDS type="Node" left="38952" top="47412" width="100" height="100">
+   <BOUNDS type="Node" left="38400" top="47184" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Render State" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Mode" slicecount="1" values="BackCullSimple">
    </PIN>
    </NODE>
-   <LINK srcnodeid="1041" srcpinname="Render State" dstnodeid="1018" dstpinname="Render State">
+   <LINK srcnodeid="1041" srcpinname="Render State" dstnodeid="1018" dstpinname="Render State" linkstyle="Bezier">
+   <LINKPOINT x="38448" y="47856">
+   </LINKPOINT>
+   <LINKPOINT x="38952" y="47856">
+   </LINKPOINT>
    </LINK>
    <NODE systemname="AnnotationDialogBox" filename="AnnotationDialogBox.v4p" nodename="AnnotationDialogBox.v4p" componentmode="InAWindow" id="1059">
    <BOUNDS type="Node" left="42524" top="47354" width="0" height="0">
@@ -3727,14 +3735,18 @@
    <LINK srcnodeid="1133" srcpinname="Y Output Value" dstnodeid="1132" dstpinname="Input 2">
    </LINK>
    <NODE systemname="Blend (DX11.RenderState)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Blend (DX11.RenderState)" componentmode="Hidden" id="1134">
-   <BOUNDS type="Node" left="38304" top="46200" width="100" height="100">
+   <BOUNDS type="Node" left="38388" top="46356" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Mode" slicecount="1" values="Blend">
    </PIN>
    <PIN pinname="Render State" visible="1" slicecount="1" values="||">
    </PIN>
    </NODE>
-   <LINK srcnodeid="1134" srcpinname="Render State" dstnodeid="1041" dstpinname="Render State">
+   <LINK srcnodeid="1134" srcpinname="Render State" dstnodeid="1041" dstpinname="Render State" linkstyle="VHV">
+   <LINKPOINT x="38252" y="46946">
+   </LINKPOINT>
+   <LINKPOINT x="38572" y="46870">
+   </LINKPOINT>
    </LINK>
    <NODE systemname="Blend (DX11.RenderState)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Blend (DX11.RenderState)" componentmode="Hidden" id="1135">
    <BOUNDS type="Node" left="21288" top="39552" width="100" height="100">
@@ -3747,5 +3759,7 @@
    <LINK srcnodeid="1135" srcpinname="Render State" dstnodeid="603" dstpinname="Render State">
    <LINKPOINT x="21288" y="39804">
    </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="1026" srcpinname="Size" dstnodeid="1012" dstpinname="Select">
    </LINK>
    </PATCH>
