@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Inria\VVVV\vvvv.projects\SAR\SubPatches\Scene.v4p" systemname="Scene" filename="C:\Inria\VVVV\vvvv.projects\SAR\SubPatches\Scene.v4p" scrollx="0" scrolly="0">
+   <PATCH nodename="C:\Inria\VVVV\vvvv.projects\SAR\SubPatches\Scene.v4p" systemname="Scene" filename="C:\Inria\VVVV\vvvv.projects\SAR\SubPatches\Scene.v4p" scrollx="12" scrolly="0">
    <BOUNDS type="Window" left="3168" top="0" width="18876" height="8544">
    </BOUNDS>
    <PACK Name="image" Version="0.2.0">

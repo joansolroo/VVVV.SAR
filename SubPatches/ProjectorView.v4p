@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
    <PATCH nodename="C:\Inria\VVVV\vvvv.projects\SAR\SubPatches\ProjectorView.v4p" scrollx="0" scrolly="0" systemname="ProjectorView" filename="C:\Inria\VVVV\vvvv.projects\SAR\SubPatches\ProjectorView.v4p">
-   <BOUNDS type="Window" left="9864" top="4476" width="9000" height="6000">
+   <BOUNDS type="Window" left="5304" top="2712" width="9000" height="6000">
    </BOUNDS>
    <PACK Name="image" Version="0.2.0">
    </PACK>
@@ -110,7 +110,7 @@
    </LINK>
    <LINK srcnodeid="4" srcpinname="Bang" dstnodeid="3" dstpinname="Input 2">
    </LINK>
-   <NODE systemname="Renderer (DX11)" nodename="Renderer (DX11)" componentmode="InAWindow" id="1" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll">
+   <NODE systemname="Renderer (DX11)" nodename="Renderer (DX11)" componentmode="FullScreen" id="1" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll">
    <BOUNDS type="Node" left="855" top="4785" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Box" left="855" top="4785" width="2940" height="2115">

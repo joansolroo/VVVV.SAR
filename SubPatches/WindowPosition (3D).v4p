@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Inria\VVVV\vvvv.projects\SAR\SubPatches\WindowPosition (3D).v4p" scrollx="2364" scrolly="11328" systemname="WindowPosition (3D)" filename="C:\Inria\VVVV\vvvv.projects\SAR\SubPatches\WindowPosition (3D).v4p">
-   <BOUNDS type="Window" left="8136" top="336" width="18912" height="11040">
+   <PATCH nodename="C:\Inria\VVVV\vvvv.projects\SAR\SubPatches\WindowPosition (3D).v4p" scrollx="2364" scrolly="528" systemname="WindowPosition (3D)" filename="C:\Inria\VVVV\vvvv.projects\SAR\SubPatches\WindowPosition (3D).v4p">
+   <BOUNDS type="Window" left="8100" top="5628" width="18912" height="11040">
    </BOUNDS>
    <PACK Name="image" Version="0.2.0">
    </PACK>
