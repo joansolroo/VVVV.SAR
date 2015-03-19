@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Inria\VVVV\vvvv.projects\SAR\SubPatches\TextEditor.v4p" systemname="TextEditor" filename="C:\Inria\VVVV\vvvv.projects\SAR\SubPatches\TextEditor.v4p">
+   <PATCH nodename="C:\Inria\VVVV\vvvv.projects\SAR\SubPatches\TextEditor.v4p" systemname="TextEditor" filename="C:\Inria\VVVV\vvvv.projects\SAR\SubPatches\TextEditor.v4p" scrollx="72" scrolly="600">
    <NODE systemname="R (Node)" nodename="R (Node)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="1500" top="6120" width="100" height="100">
    </BOUNDS>
@@ -73,9 +73,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="6" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="6936" top="6648" width="480" height="480">
+   <BOUNDS type="Box" left="6936" top="6420" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="6936" top="6648" width="0" height="0">
+   <BOUNDS type="Node" left="6936" top="6420" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
@@ -135,7 +135,7 @@
    </PIN>
    <PIN pinname="Behavior" slicecount="1" values="Bang">
    </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="Start">
+   <PIN pinname="Descriptive Name" slicecount="1" values="Clear">
    </PIN>
    <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
@@ -175,7 +175,7 @@
    </BOUNDS>
    <PIN pinname="Input 2" visible="1" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Input 1" visible="1">
+   <PIN pinname="Input 1" visible="1" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -257,9 +257,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="21" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="5016" top="6108" width="792" height="240">
+   <BOUNDS type="Box" left="1620" top="2496" width="792" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="5016" top="6108" width="0" height="0">
+   <BOUNDS type="Node" left="1620" top="2496" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Default" slicecount="1" values="DX11">
    </PIN>
@@ -268,6 +268,8 @@
    <PIN pinname="Maximum Characters" slicecount="1" values="-1">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="|Current Text|">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="22" systemname="IOBox (Value Advanced)">
@@ -315,9 +317,9 @@
    <NODE id="25" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
    <PIN pinname="Descriptive Name" slicecount="1" values="|Input Value|">
    </PIN>
-   <BOUNDS type="Box" left="1500" top="11528" width="750" height="240">
+   <BOUNDS type="Box" left="1440" top="10952" width="750" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="1500" top="11528" width="750" height="240">
+   <BOUNDS type="Node" left="1440" top="10952" width="750" height="240">
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="0" srcpinname="Input Value" dstnodeid="25" dstpinname="Input Node">
@@ -331,8 +333,6 @@
    <LINK srcnodeid="24" srcpinname="Y Output Value" dstnodeid="11" dstpinname="Input">
    </LINK>
    <LINK srcnodeid="10" srcpinname="Y Output Value" dstnodeid="11" dstpinname="Set">
-   </LINK>
-   <LINK srcnodeid="10" srcpinname="Y Output Value" dstnodeid="13" dstpinname="Input 1">
    </LINK>
    <LINK srcnodeid="9" srcpinname="OnChange" dstnodeid="13" dstpinname="Input 2">
    </LINK>
@@ -367,15 +367,37 @@
    <LINK srcnodeid="14" srcpinname="Output 1" dstnodeid="20" dstpinname="Input String">
    </LINK>
    <LINK srcnodeid="18" srcpinname="Output" dstnodeid="6" dstpinname="Y Input Value">
-   <LINKPOINT x="6912" y="6612">
+   <LINKPOINT x="6912" y="6498">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="4" srcpinname="Output" dstnodeid="2" dstpinname="Keyboard">
    </LINK>
-   <BOUNDS type="Window" left="11640" top="1140" width="9420" height="12528">
+   <BOUNDS type="Window" left="9672" top="264" width="9516" height="11784">
    </BOUNDS>
    <PACK Name="image" Version="0.2.0">
    </PACK>
    <PACK Name="addonpack" Version="33.7.0">
    </PACK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="26" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="2844" top="3060" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2844" top="3060" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Update">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="26" srcpinname="Y Output Value" dstnodeid="13" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="21" srcpinname="Output String" dstnodeid="19" dstpinname="Input String">
+   </LINK>
    </PATCH>

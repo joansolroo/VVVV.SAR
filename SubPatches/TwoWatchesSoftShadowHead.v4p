@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Inria\VVVV\vvvv.projects\SAR\SubPatches\TwoWatchesSoftShadowHead.v4p" systemname="TwoWatchesSoftShadowHead" filename="C:\Inria\VVVV\vvvv.projects\SAR\SubPatches\TwoWatchesSoftShadowHead.v4p" scrollx="24276" scrolly="34968">
+   <PATCH nodename="C:\Inria\VVVV\vvvv.projects\SAR\SubPatches\TwoWatchesSoftShadowHead.v4p" systemname="TwoWatchesSoftShadowHead" filename="C:\Inria\VVVV\vvvv.projects\SAR\SubPatches\TwoWatchesSoftShadowHead.v4p" scrollx="26292" scrolly="38136">
    <BOUNDS type="Window" left="0" top="0" width="26640" height="12384">
    </BOUNDS>
    <PACK Name="image" Version="0.2.0">
@@ -2202,10 +2202,10 @@
    <PIN pinname="Output Node" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="Pointer3DwithParentDetection" filename="Pointer3DwithParentDetection.v4p" nodename="Pointer3DwithParentDetection.v4p" componentmode="Hidden" id="957">
+   <NODE systemname="Pointer3DwithParentDetection" filename="Pointer3DwithParentDetection.v4p" nodename="Pointer3DwithParentDetection.v4p" componentmode="InAWindow" id="957">
    <BOUNDS type="Node" left="20029" top="34047" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Window" left="2784" top="1056" width="19320" height="11628">
+   <BOUNDS type="Window" left="3000" top="0" width="19320" height="11628">
    </BOUNDS>
    <PIN pinname="Cursor position" visible="1">
    </PIN>
@@ -2857,7 +2857,7 @@
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
-   <PIN pinname="Select" visible="1" slicecount="1" values="3">
+   <PIN pinname="Select" visible="1" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -2980,7 +2980,7 @@
    <LINKPOINT x="38872" y="43250">
    </LINKPOINT>
    </LINK>
-   <NODE systemname="AnnotationHandler" filename="AnnotationHandler.v4p" nodename="AnnotationHandler.v4p" componentmode="Hidden" id="1026">
+   <NODE systemname="AnnotationHandler" filename="AnnotationHandler.v4p" nodename="AnnotationHandler.v4p" componentmode="InAWindow" id="1026">
    <BOUNDS type="Node" left="38638" top="42482" width="0" height="0">
    </BOUNDS>
    <BOUNDS type="Box" left="35208" top="37676" width="8292" height="9612">
@@ -3544,18 +3544,12 @@
    <LINKPOINT x="43932" y="43350">
    </LINKPOINT>
    </LINK>
-   <LINK srcnodeid="1073" srcpinname="Left Button" dstnodeid="1026" dstpinname="Insert" linkstyle="Bezier">
-   <LINKPOINT x="39612" y="41850">
-   </LINKPOINT>
-   <LINKPOINT x="39192" y="41850">
-   </LINKPOINT>
-   </LINK>
-   <NODE systemname="TextEditor" filename="TextEditor.v4p" nodename="TextEditor.v4p" componentmode="InAWindow" id="1125">
+   <NODE systemname="TextEditor" filename="TextEditor.v4p" nodename="TextEditor.v4p" componentmode="Hidden" id="1125">
    <BOUNDS type="Node" left="44715" top="44354" width="0" height="0">
    </BOUNDS>
    <BOUNDS type="Box" left="40003" top="38090" width="9424" height="12528">
    </BOUNDS>
-   <BOUNDS type="Window" left="10776" top="1416" width="9420" height="12528">
+   <BOUNDS type="Window" left="9672" top="264" width="9516" height="11784">
    </BOUNDS>
    <PIN pinname="Text out" visible="1">
    </PIN>
@@ -3606,12 +3600,6 @@
    <LINKPOINT x="41160" y="42354">
    </LINKPOINT>
    <LINKPOINT x="44904" y="42354">
-   </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="1073" srcpinname="Left Button" dstnodeid="1125" dstpinname="Clear" linkstyle="Bezier" hiddenwhenlocked="0">
-   <LINKPOINT x="39660" y="42780">
-   </LINKPOINT>
-   <LINKPOINT x="45324" y="42780">
    </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="1126" systemname="IOBox (Node)">
@@ -3761,5 +3749,33 @@
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="1026" srcpinname="Size" dstnodeid="1012" dstpinname="Select">
+   </LINK>
+   <NODE systemname="AND (Boolean)" nodename="AND (Boolean)" componentmode="Hidden" id="1137">
+   <BOUNDS type="Node" left="40644" top="41580" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="NOT (Boolean)" nodename="NOT (Boolean)" componentmode="Hidden" id="1138">
+   <BOUNDS type="Node" left="41196" top="41088" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="1086" srcpinname="Y Output Value" dstnodeid="1138" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="1138" srcpinname="Output" dstnodeid="1137" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="1073" srcpinname="Left Button" dstnodeid="1137" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="1137" srcpinname="Output" dstnodeid="1026" dstpinname="Insert">
+   </LINK>
+   <LINK srcnodeid="1073" srcpinname="Left Button" dstnodeid="1125" dstpinname="Clear">
    </LINK>
    </PATCH>
