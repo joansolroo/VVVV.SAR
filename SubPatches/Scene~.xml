@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Inria\VVVV\vvvv.projects\SAR\SubPatches\Scene.v4p" systemname="Scene" filename="C:\Inria\VVVV\vvvv.projects\SAR\SubPatches\Scene.v4p" scrollx="12" scrolly="0">
+   <PATCH nodename="C:\Inria\VVVV\vvvv.projects\SAR\SubPatches\Scene.v4p" systemname="Scene" filename="C:\Inria\VVVV\vvvv.projects\SAR\SubPatches\Scene.v4p" scrollx="276" scrolly="2640">
    <BOUNDS type="Window" left="3168" top="0" width="18876" height="8544">
    </BOUNDS>
    <PACK Name="image" Version="0.2.0">
@@ -440,12 +440,6 @@
    <LINKPOINT x="11145" y="7515">
    </LINKPOINT>
    <LINKPOINT x="11445" y="7515">
-   </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="26" srcpinname="Transform(vvvv)" dstnodeid="17" dstpinname="Input Node" linkstyle="VHV">
-   <LINKPOINT x="11765" y="6195">
-   </LINKPOINT>
-   <LINKPOINT x="11650" y="6195">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="24" srcpinname="Transform Out" dstnodeid="1" dstpinname="Input 3" linkstyle="Bezier">
@@ -1087,5 +1081,37 @@
    </LINKPOINT>
    <LINKPOINT x="2160" y="8895">
    </LINKPOINT>
+   </LINK>
+   <NODE systemname="Decompose (Transform Vector)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Decompose (Transform Vector)" componentmode="Hidden" id="61">
+   <BOUNDS type="Node" left="12432" top="6204" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="TranslateXYZ" visible="1">
+   </PIN>
+   <PIN pinname="ScaleXYZ" visible="1">
+   </PIN>
+   <PIN pinname="RotateXYZ" visible="1">
+   </PIN>
+   <PIN pinname="Transform In" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Transform (Transform 3d Vector)" nodename="Transform (Transform 3d Vector)" componentmode="Hidden" id="62">
+   <BOUNDS type="Node" left="12276" top="6720" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Translate XYZ" visible="1">
+   </PIN>
+   <PIN pinname="Scale XYZ" visible="1">
+   </PIN>
+   <PIN pinname="Rotate XYZ" visible="1" slicecount="3" values="0,0,0">
+   </PIN>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="61" srcpinname="TranslateXYZ" dstnodeid="62" dstpinname="Translate XYZ">
+   </LINK>
+   <LINK srcnodeid="61" srcpinname="ScaleXYZ" dstnodeid="62" dstpinname="Scale XYZ">
+   </LINK>
+   <LINK srcnodeid="26" srcpinname="Transform(vvvv)" dstnodeid="61" dstpinname="Transform In">
+   </LINK>
+   <LINK srcnodeid="62" srcpinname="Transform Out" dstnodeid="17" dstpinname="Input Node">
    </LINK>
    </PATCH>

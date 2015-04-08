@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Inria\VVVV\vvvv.projects\SAR\SubPatches\EyePosition.v4p" systemname="EyePosition" filename="C:\Inria\VVVV\vvvv.projects\SAR\SubPatches\EyePosition.v4p" scrollx="0" scrolly="3768">
+   <PATCH nodename="C:\Inria\VVVV\vvvv.projects\SAR\SubPatches\EyePosition.v4p" systemname="EyePosition" filename="C:\Inria\VVVV\vvvv.projects\SAR\SubPatches\EyePosition.v4p" scrollx="0" scrolly="2016">
    <NODE id="0" nodename="IOBox (String)" componentmode="InABox" systemname="IOBox (String)" hiddenwhenlocked="0" managers="">
    <BOUNDS type="Node" left="2985" top="1500" width="5100" height="600">
    </BOUNDS>
@@ -349,7 +349,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="7089" top="11916" width="6000" height="4500">
    </BOUNDS>
-   <BOUNDS type="Window" left="-28800" top="-4500" width="7080" height="5880">
+   <BOUNDS type="Window" left="-28800" top="1524" width="7080" height="5880">
    </BOUNDS>
    <PIN pinname="Layers" visible="1" pintype="Input" slicecount="1" values="||">
    </PIN>
@@ -982,7 +982,7 @@
    <LINKPOINT x="10537" y="7194">
    </LINKPOINT>
    </LINK>
-   <BOUNDS type="Window" left="2196" top="744" width="14292" height="21216">
+   <BOUNDS type="Window" left="4212" top="288" width="23256" height="13176">
    </BOUNDS>
    <PACK Name="image" Version="0.2.0">
    </PACK>

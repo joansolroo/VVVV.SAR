@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Inria\VVVV\vvvv.projects\SAR\modules\WatchFaceReverse.v4p" scrollx="0" scrolly="-360" systemname="WatchFaceReverse" filename="C:\Inria\VVVV\vvvv.projects\SAR\Modules\WatchFaceReverse.v4p">
+   <PATCH nodename="C:\Inria\VVVV\vvvv.projects\SAR\modules\WatchFaceReverse.v4p" scrollx="0" scrolly="1080" systemname="WatchFaceReverse" filename="C:\Inria\VVVV\vvvv.projects\SAR\Modules\WatchFaceReverse.v4p">
    <BOUNDS type="Window" left="-26475" top="-6375" width="22185" height="14370">
    </BOUNDS>
    <PACK Name="image" Version="0.2.0">
@@ -169,7 +169,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="12195" top="4230" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="4">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="4.51">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>

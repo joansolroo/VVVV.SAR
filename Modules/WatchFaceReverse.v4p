@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
    <PATCH nodename="C:\Inria\VVVV\vvvv.projects\SAR\modules\WatchFaceReverse.v4p" scrollx="0" scrolly="1080" systemname="WatchFaceReverse" filename="C:\Inria\VVVV\vvvv.projects\SAR\Modules\WatchFaceReverse.v4p">
-   <BOUNDS type="Window" left="-26475" top="-6375" width="22185" height="14370">
+   <BOUNDS type="Window" left="2916" top="2460" width="22176" height="14364">
    </BOUNDS>
    <PACK Name="image" Version="0.2.0">
    </PACK>
@@ -169,7 +169,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="12195" top="4230" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="4.51">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="3.95">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -259,7 +259,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="15600" top="7080" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="2" visible="1" values="1.7,1.7">
+   <PIN pinname="Y Input Value" slicecount="2" visible="1" values="1.34,1.3">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -335,7 +335,7 @@
    </PIN>
    <PIN pinname="Range" visible="1">
    </PIN>
-   <PIN pinname="Font weight" visible="1" slicecount="1" values="1">
+   <PIN pinname="Font weight" visible="1" slicecount="1" values="3.95">
    </PIN>
    <PIN pinname="Center Offset" visible="1" slicecount="2" values="0,0">
    </PIN>
@@ -395,7 +395,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="8460" top="6795" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1.36">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1.82">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -553,8 +553,6 @@
    <LINK srcnodeid="11" srcpinname="Output Enum" dstnodeid="124" dstpinname="Font" hiddenwhenlocked="1">
    </LINK>
    <LINK srcnodeid="11" srcpinname="Output Enum" dstnodeid="130" dstpinname="Font" hiddenwhenlocked="1">
-   </LINK>
-   <LINK srcnodeid="67" srcpinname="Y Output Value" dstnodeid="124" dstpinname="Font weight" hiddenwhenlocked="1">
    </LINK>
    <LINK srcnodeid="67" srcpinname="Y Output Value" dstnodeid="130" dstpinname="Font weight" hiddenwhenlocked="1">
    </LINK>
@@ -785,7 +783,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="11580" top="6855" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -795,7 +793,7 @@
    </PIN>
    <PIN pinname="Behavior" slicecount="1" values="Toggle">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="0">
+   <PIN pinname="X Input Value" slicecount="1" values="1">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="Enabled">
    </PIN>
@@ -845,5 +843,19 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="158" srcpinname="Y Output Value" dstnodeid="117" dstpinname="Enabled">
+   </LINK>
+   <NODE systemname="Multiply (Value)" nodename="Multiply (Value)" componentmode="Hidden" id="159">
+   <BOUNDS type="Node" left="10968" top="7320" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" slicecount="1" values="0.7">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="67" srcpinname="Y Output Value" dstnodeid="159" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="159" srcpinname="Output" dstnodeid="124" dstpinname="Font weight">
    </LINK>
    </PATCH>

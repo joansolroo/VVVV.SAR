@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Inria\VVVV\vvvv.projects\SAR\SubPatches\LayerWithShadows.v4p" scrollx="0" scrolly="0" systemname="LayerWithShadows" filename="C:\Inria\VVVV\vvvv.projects\SAR\SubPatches\LayerWithShadows.v4p">
+   <PATCH nodename="C:\Inria\VVVV\vvvv.projects\SAR\SubPatches\LayerWithShadows.v4p" scrollx="12" scrolly="0" systemname="LayerWithShadows" filename="C:\Inria\VVVV\vvvv.projects\SAR\SubPatches\LayerWithShadows.v4p">
    <NODE id="0" nodename="Perspective (Transform)" systemname="Perspective (Transform)">
    <BOUNDS height="0" left="4650" top="2850" type="Node" width="0">
    </BOUNDS>
@@ -87,9 +87,9 @@
    </PIN>
    </NODE>
    <NODE componentmode="InABox" id="6" nodename="IOBox (String)" systemname="IOBox (String)">
-   <BOUNDS height="270" left="5040" top="1695" type="Node" width="1620">
+   <BOUNDS height="270" left="6156" top="2199" type="Node" width="1620">
    </BOUNDS>
-   <BOUNDS height="465" left="5040" top="1695" type="Box" width="6210">
+   <BOUNDS height="465" left="6156" top="2199" type="Box" width="6210">
    </BOUNDS>
    <BOUNDS height="160" left="0" top="0" type="Window" width="215">
    </BOUNDS>
@@ -199,7 +199,7 @@
    </PIN>
    <PIN pinname="Geometry" visible="1" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="Transform In" visible="1" slicecount="1" values="||">
+   <PIN pinname="Transform In" visible="1" slicecount="33" values=",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,">
    </PIN>
    <PIN pinname="Color" visible="1" slicecount="1" values="|-2.62870,7.24870,-1.04832,1.00000|">
    </PIN>
@@ -237,7 +237,7 @@
    </PIN>
    <PIN pinname="Specular Color">
    </PIN>
-   <PIN pinname="Transform In" visible="1" slicecount="1" values="||">
+   <PIN pinname="Transform In" visible="1" slicecount="33" values=",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,">
    </PIN>
    <PIN pinname="Geometry" visible="1" slicecount="1" values="||">
    </PIN>
@@ -279,7 +279,7 @@
    </PIN>
    </NODE>
    <NODE id="21" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
-   <PIN pinname="Descriptive Name" slicecount="1" values="Geometry">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Objects Geometry|">
    </PIN>
    <BOUNDS type="Box" left="1500" top="500" width="750" height="240">
    </BOUNDS>
@@ -295,21 +295,15 @@
    </LINKPOINT>
    </LINK>
    <NODE id="22" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
-   <PIN pinname="Descriptive Name" slicecount="1" values="|Transform In|">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|ShadowCasters Transform In|">
    </PIN>
-   <BOUNDS type="Box" left="7500" top="245" width="750" height="240">
+   <BOUNDS type="Box" left="9600" top="773" width="750" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="7500" top="245" width="750" height="240">
+   <BOUNDS type="Node" left="9600" top="773" width="750" height="240">
    </BOUNDS>
    <PIN pinname="Output Node" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="22" srcpinname="Output Node" dstnodeid="14" dstpinname="Transform In" linkstyle="Bezier">
-   <LINKPOINT x="7485" y="3135">
-   </LINKPOINT>
-   <LINKPOINT x="3795" y="3135">
-   </LINKPOINT>
-   </LINK>
    <LINK srcnodeid="1" srcpinname="Transform Out" dstnodeid="14" dstpinname="LampViewXf">
    </LINK>
    <LINK srcnodeid="0" srcpinname="Transform Out" dstnodeid="14" dstpinname="LampProjXf">
@@ -374,19 +368,9 @@
    </NODE>
    <LINK srcnodeid="9" srcpinname="Buffers" dstnodeid="25" dstpinname="Input Node">
    </LINK>
-   <BOUNDS type="Window" left="3885" top="2655" width="15720" height="7575">
+   <BOUNDS type="Window" left="4164" top="2340" width="15720" height="7572">
    </BOUNDS>
-   <LINK srcnodeid="21" srcpinname="Output Node" dstnodeid="13" dstpinname="Geometry" linkstyle="Bezier">
-   <LINKPOINT x="1560" y="1643">
-   </LINKPOINT>
-   <LINKPOINT x="11565" y="1643">
-   </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="22" srcpinname="Output Node" dstnodeid="13" dstpinname="Transform In" linkstyle="Bezier">
-   <LINKPOINT x="7560" y="1515">
-   </LINKPOINT>
-   <LINKPOINT x="11730" y="1515">
-   </LINKPOINT>
+   <LINK srcnodeid="22" srcpinname="Output Node" dstnodeid="13" dstpinname="Transform In" linkstyle="PolyLine">
    </LINK>
    <PACK Name="image" Version="0.2.0">
    </PACK>
@@ -419,5 +403,29 @@
    <LINK srcnodeid="26" srcpinname="Y Output Value" dstnodeid="14" dstpinname="Enabled">
    </LINK>
    <LINK srcnodeid="10" srcpinname="Color Output" dstnodeid="14" dstpinname="Ambient Color">
+   </LINK>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="27" systemname="IOBox (Node)">
+   <BOUNDS type="Box" left="6204" top="252" width="792" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="6204" top="252" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input Node" slicecount="33" visible="1" values=",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Objects Transform In|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="27" srcpinname="Output Node" dstnodeid="14" dstpinname="Transform In">
+   </LINK>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="28" systemname="IOBox (Node)">
+   <BOUNDS type="Box" left="10728" top="468" width="792" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="10728" top="468" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input Node" slicecount="1" visible="1" values="||">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|ShadowCasters geometry|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="28" srcpinname="Output Node" dstnodeid="13" dstpinname="Geometry">
    </LINK>
    </PATCH>
